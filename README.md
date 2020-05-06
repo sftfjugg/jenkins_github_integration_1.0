@@ -5,7 +5,7 @@
 
 Three jobs are needed for simulating this project.
 
-*1. job1* 
+###### 1. job1
 For deploying testing environment on the top of docker using git hooks(post-commit) 
 when any commits are done from the featured branch( other than master(main branch)) and
 the job is scheduled using PollSCM.
@@ -22,14 +22,15 @@ vi .git/hooks/post-commit
 
 ![Job1 configuration](images/job1i1.png)
 
-*2.job2*
+
+###### 2. job2
 For deploying Production environment only when there is some change in master branch and scheduled using PollSCM.
 
 
 ![Job2 configuration](images/job2i2.png)
 
 
-*2.job3*
+###### 3. job3
 
 For merging featured branch to the master(main) branch and triggered remotely using http://<jenkins url>/job/job3/build?token=TOKEN with credentials of jenkins users only and also scheduled using PollSCM.
 
