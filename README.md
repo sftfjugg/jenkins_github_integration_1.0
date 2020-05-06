@@ -32,7 +32,8 @@ For deploying Production environment only when there is some change in master br
 
 ###### 3. job3
 
-For merging featured branch to the master(main) branch and triggered remotely using http://<jenkins url>/job/job3/build?token=TOKEN with credentials of jenkins users only and also scheduled using PollSCM.
+For merging featured branch to the master(main) branch and triggered remotely using http://<jenkins url>/job/job3/build?token=TOKEN with credentials of jenkins users only and it also trigger job2 if it is build(run) successfully.
+It is also scheduled using PollSCM.
 
 ![Job3 configuration](images/job3i3.png)
 
