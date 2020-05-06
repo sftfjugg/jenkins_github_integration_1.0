@@ -1,7 +1,6 @@
 # Jenkins and Github Integration using PollSCM, Job Chaining and Remote Triggers, git hooks.
 
-## Integrating Jenkins with local git hooks and deploying the 
-## source code on docker containers using PollSCM triggers.
+## Integrating Jenkins with local git hooks and deploying the source code on docker containers using PollSCM triggers.
 
 Three jobs are needed for simulating this project.
 
