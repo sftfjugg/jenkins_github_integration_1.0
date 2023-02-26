@@ -11,6 +11,7 @@ the job is scheduled using PollSCM.
 
 git hooks => post-commit  script
 vi .git/hooks/post-commit
+```
     #!/bin/bash
     echo "First <git fetch> and then Post Commit Tasks are started"                                                     
     git fetch                                                                                                              
@@ -18,7 +19,7 @@ vi .git/hooks/post-commit
     echo "git push is done to the current Remote Branch"                                                                   
     #echo "remote Build Trigger using jenkins URL"                                                                          
     #curl --user "<user>:<password>" <Remote Build Trigger URL> 
-
+```
 ![Job1 configuration](images/job1i1.png)
 
 
